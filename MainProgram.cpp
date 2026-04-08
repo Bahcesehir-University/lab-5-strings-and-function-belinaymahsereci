@@ -1,3 +1,15 @@
+// ============================================================
+// Lab: Strings and String Operations with Function & Operator
+//       Overloading in C++
+// Course: Object-Oriented Programming for Engineers
+// Level: 2nd Year Engineering
+// Duration: 70 minutes
+// ============================================================
+// SINGLE FILE IMPLEMENTATION - No header files allowed
+// ============================================================
+// STUDENT VERSION - Implement all TODO sections
+// ============================================================
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -101,7 +113,7 @@ int MyString::length() const {
 
 char MyString::charAt(int index) const {
     // TODO: Return character at given index
-   if(index<0 || index > length())
+   if(index<0 || index >=  data.length())
     // Throw std::out_of_range if index is invalid (negative or >= length)
     throw out_of_range (" if index out of range ");
     return data [index];
@@ -388,4 +400,3 @@ int main() {
     cout << "\nAll demos complete!" << endl;
     return 0;
 }
-
